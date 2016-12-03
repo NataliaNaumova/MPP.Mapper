@@ -39,7 +39,8 @@ namespace DtoMapping
                 throw new ArgumentNullException(nameof(tDestination));
             }
 
-            if ((!tSource.IsPrimitive) || (!tSource.IsValueType))
+            if ((!tSource.IsPrimitive) ||
+                (!tSource.IsValueType))
             {
                 throw new ArgumentException("Type must be a primitive value type.", nameof(tSource));
             }
@@ -57,6 +58,6 @@ namespace DtoMapping
             {
                 return false;
             }
-        }
+            }
     }
 }

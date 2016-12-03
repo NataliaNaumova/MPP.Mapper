@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DtoMapping
 {    
-    internal class MappingExpressionsGenerator 
+    public class MappingExpressionsGenerator 
     {
         private const string SourceParameterName = "source";
 

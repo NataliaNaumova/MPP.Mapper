@@ -43,6 +43,10 @@ namespace DtoMapping
                     {
                         return true;
                     }
+                    if ((sourceProperty.PropertyType).IsSubclassOf(destinationProperty.PropertyType))
+                    {
+                        return true;
+                    }
                 }
             }
 
